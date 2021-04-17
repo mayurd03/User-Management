@@ -1,0 +1,32 @@
+User Management Service
+
+1) In service the code basically is in the "/src" folder
+2) "routes/routes.js" has endpoints of API
+3) "controllers/user_controller.js" includes handler, plugins and validations of the API
+4) The "factory/factory.js" has the business logic of the API
+5) "interfaces/db.interface.js" has the functions supposed to provide DB related operations
+6) "config/env-local.js" has configurations required
+7) "databases/mongodb.js" has established connection with mongodb
+8) The "validations/user_validations.js" deals with the validations of parameters passed to an API 
+9) The plugins folder has plugin of JWT authorization
+   and there are other required files.
+
+
+The service has authentication strategy of Bearer JWT
+
+So use the following authorization token in the headers to access the APIs:
+"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiJwYXNzd29yZCJ9.LBRukwCS5z3saJkh1fQCBvCumu5QBuiLsAr6eWelxGw"
+
+
+Steps to run the service:
+
+STEP 1:
+    // set your node environment with the command
+    export NODE_ENV=env-local
+
+STEP 2:
+    // run service using
+    node index.js
+
+STEP 3:
+    // access routes locally at url 0.0.0.0:40393/

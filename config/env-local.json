@@ -1,0 +1,30 @@
+{
+  "env": "env-local",
+  "server": {
+    "routes": {
+      "cors": true,
+      "timeout": {
+        "server": 1200000,
+        "socket": 1300000
+      }
+    },
+    "port": 40393,
+    "host": "0.0.0.0"
+  },
+  "database": {
+    "mongo": {
+      "type": "mongo",
+      "name": "GLOBAL_DB",
+      "host": "0.0.0.0",
+      "port": 27017,
+      "username": "",
+      "password": ""
+    }
+  },
+  "logging": {
+    "name": "USER_MENAGEMENT_SERVICE",
+    "level": "debug",
+    "path": "/tmp/node_debug.log"
+  },
+  "secret_key": "SECRET_KEY"
+}
